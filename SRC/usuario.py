@@ -8,7 +8,7 @@ class Usuario:
         self.nombre_usuario = nombre_usuario
         self.identificacion = identificacion
         self.celular = celular
-
+# Hola
     # =========================
     # VALIDAR CORREO
     # =========================
