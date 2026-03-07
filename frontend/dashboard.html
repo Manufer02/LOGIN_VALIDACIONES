@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Panel Usuario</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1 id="mensaje"></h1>
+
+<p>Ha iniciado sesión correctamente</p>
+
+<button onclick="logout()">Cerrar sesión</button>
+
+</div>
+
+<script>
+
+const usuario = localStorage.getItem("usuario")
+
+document.getElementById("mensaje").innerText = "Bienvenido " + usuario
+
+function logout(){
+
+localStorage.removeItem("usuario")
+
+window.location.href="index.html"
+
+}
+
+</script>
+
+</body>
+
+</html>
